@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 from typing import Optional
 
-from commands.utils import underscore
+from management_commands.utils import underscore
 
 
 class Command:

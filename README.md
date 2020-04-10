@@ -2,13 +2,13 @@
 Extra small zero-dependency management commands library for python apps
 
 # Installation
-`pip3 install commands`
+`pip3 install management_commands`
 
 # Example
 ```python
 import os
 
-from commands import Command, main
+from management_commands import Command, main
 
 
 class Ls(Command):

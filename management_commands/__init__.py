@@ -1,7 +1,7 @@
 from typing import List
 import argparse
 
-from commands.command import Command
+from management_commands.command import Command
 
 
 def main(

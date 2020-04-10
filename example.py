@@ -1,6 +1,6 @@
 import os
 
-from commands import Command, main
+from management_commands import Command, main
 
 
 class Ls(Command):
