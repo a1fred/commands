@@ -1,7 +1,7 @@
 from setuptools import setup
 
 
-VERSION = "0.2"
+VERSION = "0.3"
 
 setup(
     name='management_commands',
@@ -11,6 +11,7 @@ setup(
     packages=['management_commands', ],
     author='a1fred',
     author_email='demalf@gmail.com',
+    include_package_data=True,
     description='Extra small zero-dependency management commands library for python apps',
     classifiers=[
         'Environment :: Console',
