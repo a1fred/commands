@@ -8,6 +8,7 @@ setup(
     version=VERSION,
     url='https://github.com/a1fred/management_commands',
     license='MIT',
+    packages=['management_commands', ],
     author='a1fred',
     author_email='demalf@gmail.com',
     description='Extra small zero-dependency management commands library for python apps',
