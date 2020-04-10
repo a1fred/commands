@@ -1,6 +1,10 @@
 # Commands
 Extra small zero-dependency management commands library for python apps
 
+# Installation
+`pip3 install commands`
+
+# Example
 ```python
 import os
 
