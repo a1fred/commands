@@ -16,13 +16,16 @@ class Command:
 
         return underscore(self.__class__.__name__)
 
-    def add_subparser(self, subparsers):
+    def add_subparser(self, subparsers, handler_argument_name: str):
         parser = subparsers.add_parser(self.get_command_name())
         self.add_arguments(parser=parser)
-        parser.set_defaults(___handler=self.handle)
+        parser_defaults = {
+            handler_argument_name: self.handle,
+        }
+        parser.set_defaults(**parser_defaults)
 
     def add_arguments(self, parser: ArgumentParser):
         pass
 
-    def handle(self, **kwargs) -> None:
+    def handle(self, **kwargs):
         raise NotImplementedError
